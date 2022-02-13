@@ -28,6 +28,9 @@ const TableContainer = styled.table`
     width: 150px;
     border-bottom: 2px solid black;
   }
+  td svg {
+    color: red;
+  }
 `;
 
 export default TableContainer;

@@ -23,6 +23,16 @@ const http = {
       return error.response.status;
     }
   },
+  removeTaskById: async ({ id: _id }) => {
+    try {
+      const response = await api.delete('/task/remove-task', {
+        data: { _id },
+      });
+      return response.data;
+    } catch (error) {
+      return error.response.status;
+    }
+  },
 };
 
 export default http;

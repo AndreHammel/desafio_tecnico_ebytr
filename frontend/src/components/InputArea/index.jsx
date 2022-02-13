@@ -28,10 +28,14 @@ export default function InputArea() {
   }
 
   const handleButtonInsert = async (newtask, employee, status) => {
-    console.log(newtask, employee, status)
     const createTask = await http.createNewTask({newtask, employee, status})
     getAll();
   };
+
+  const removeTaskById = async (id) => {
+    await http.removeTaskById({ id })
+    getAll()
+  }
 
   return (
     <Container>
@@ -52,7 +56,7 @@ export default function InputArea() {
           Inserir
         </button>
       </fieldset>
-      { !loading && <Table tasks={tasks} />}
+      { !loading && <Table tasks={tasks} removeTaskById={removeTaskById} />}
     </Container>
   );
 }

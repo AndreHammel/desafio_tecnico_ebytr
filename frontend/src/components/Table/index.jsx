@@ -1,12 +1,14 @@
 /* eslint-disable */ 
 import React from 'react';
 import TableContainer from './style';
+import { FaBeer } from 'react-icons/fa';
 
 function convertDate(date) {
   return new Date(date).toLocaleString('pt-BR', { timeZone: 'America/Sao_Paulo' })
 }
 
-export default function Table({ tasks }) {
+export default function Table({ tasks, removeTaskById }) {
+
   return (
     <TableContainer>
       <thead>
@@ -25,6 +27,7 @@ export default function Table({ tasks }) {
             <td>{task}</td>
             <td>{employee}</td>
             <td>{status}</td>
+            <td ><button type='button' onClick={ ()=> removeTaskById(_id)}>A</button></td>
           </tr>
         ))}
       </tbody>
