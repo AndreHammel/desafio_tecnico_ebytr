@@ -1,0 +1,12 @@
+
+use('model_tasks');
+db.tasks.insertMany([
+  { 'employee': 'Kiko', 'task': 'Jogar futebol com bola quadrada', 'status': 'em andamento', 'date': new Date('2014-03-01T08:00:00Z') },
+  { 'employee': 'Chavez', 'task': 'Entrar no barril', 'status': 'pendente', 'date': new Date('2014-03-01T09:00:00Z') },
+  { 'employee': 'Chiquinha', 'task': 'Ir brincar com Chavez', 'status': 'pendente', 'date': new Date('2014-03-15T09:00:00Z') },
+  { 'employee': 'Sr. Madruga', 'task': 'Não pagar o aluguel', 'status': 'em andamento', 'date': new Date('2014-04-04T11:21:39.736Z') },
+  { 'employee': 'Sr. Barriga', 'task': 'Cobrar o aluguel do Sr. Madruga', 'em andamento': 'pendente', 'date': new Date('2014-04-04T21:23:13.331Z') },
+  { 'employee': 'Prof. Girafales', 'task': 'Comprar flores', 'status': 'pronto', 'date': new Date('2015-06-04T05:08:13Z') },
+  { 'employee': 'Godinez', 'task': 'Dizer que não fui "eu"', 'status': 'pronto', 'date': new Date('2015-09-10T08:43:00Z') },
+  { 'employee': 'Jaiminho', 'task': 'Descansar um pouco para evitar a fadiga', 'status': 'em andamento', 'date': new Date('2016-02-06T20:20:13Z') },
+]);

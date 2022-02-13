@@ -1,0 +1,23 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2021": true,
+        "node": true,
+        "mocha": true
+    },
+    "extends": [
+      "trybe-backend",
+      "prettier"
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "plugins": ["prettier"],
+    "rules": {
+      "prettier/prettier": "error",
+      "max-len": ["error", { "code": 90 }],
+      // "implicit-arrow-linebreak": ["error", "beside"],
+      "mocha/no-mocha-arrows": 2
+    }
+}
