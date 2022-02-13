@@ -26,7 +26,7 @@ const Container = styled.div`
       background: var(--white);
       height: 30px;
       border-radius: 8px;
-      outline: none;
+      // outline: none;
       border: 0;
       padding: 0 8px;
     }
@@ -47,6 +47,14 @@ const Container = styled.div`
 
       &:disabled {
         background: rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    input,
+    select {
+      &:focus {
+        outline: 2px solid var(--blue-200);
+        box-shadow: 4px 4px 5px var(--blue-200);
       }
     }
   }
