@@ -33,6 +33,7 @@ export default function InputArea() {
   };
 
   const removeTaskById = async (id) => {
+
     await http.removeTaskById({ id })
     getAll()
   }
@@ -48,7 +49,7 @@ export default function InputArea() {
         />
         <input value={employee} onChange={(e) => setEmployee(e.target.value)} />
         <select value={status} onChange={(e) => setStatus(e.target.value)}>
-          <option value='pendente' >pendente</option>
+          <option value='pendente'>pendente</option>
           <option value='pronto'>pronto</option>
           <option value='andamento'>em andamento</option>
         </select>

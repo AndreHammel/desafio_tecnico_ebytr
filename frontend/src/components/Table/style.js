@@ -25,11 +25,45 @@ const TableContainer = styled.table`
     border-bottom: 2px solid black;
   }
   th:nth-of-type(5) {
-    width: 150px;
+    width: 100px;
     border-bottom: 2px solid black;
   }
-  td svg {
-    color: red;
+
+  td:nth-of-type(4) {
+    text-align: center;
+  }
+
+  td:nth-of-type(5) {
+    text-align: center;
+  }
+
+  .icon__trash {
+    color: var(--red);
+  }
+  .icon__pencil {
+    color: var(--green);
+  }
+
+  .pendente {
+    color: var(--blue-900);
+    border-radius: 10px;
+    border: 4px solid var(--blue-900);
+    background: none;
+    width: 80px;
+  }
+  .andamento {
+    color: var(--pink-300);
+    border-radius: 10px;
+    border: 4px solid var(--pink-300);
+    background: none;
+    width: 80px;
+  }
+  .pronto {
+    color: var(--green-banner);
+    border-radius: 10px;
+    border: 4px solid var(--green-banner);
+    background: none;
+    width: 80px;
   }
 `;
 

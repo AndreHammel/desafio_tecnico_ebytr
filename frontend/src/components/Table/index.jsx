@@ -1,7 +1,9 @@
 /* eslint-disable */ 
 import React from 'react';
 import TableContainer from './style';
-import { FaBeer } from 'react-icons/fa';
+import { FaTrashAlt, FaPencilAlt } from 'react-icons/fa';
+import Tooltip from '@mui/material/Tooltip'
+import IconButton from '@mui/material/IconButton'
 
 function convertDate(date) {
   return new Date(date).toLocaleString('pt-BR', { timeZone: 'America/Sao_Paulo' })
@@ -26,8 +28,19 @@ export default function Table({ tasks, removeTaskById }) {
             <td>{ convertDate(date) }</td>
             <td>{task}</td>
             <td>{employee}</td>
-            <td>{status}</td>
-            <td ><button type='button' onClick={ ()=> removeTaskById(_id)}>A</button></td>
+            <td className={status}>{status}</td>
+            <td >
+              <Tooltip title='deletar' >
+                <IconButton onClick={ ()=> removeTaskById(_id)}>
+                  <FaTrashAlt className='icon__trash'/>
+                </IconButton>
+              </Tooltip>
+              <Tooltip title='editar' >
+                <IconButton onClick={ ()=> removeTaskById(_id)}>
+                  <FaPencilAlt className='icon__pencil'/>
+                </IconButton>
+              </Tooltip>
+              </td>
           </tr>
         ))}
       </tbody>
