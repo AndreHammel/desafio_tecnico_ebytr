@@ -14,7 +14,7 @@ module.exports = {
   updateTaskService: async (taskObj) => {
     const { _id } = taskObj;
     if (!isIdValid(_id)) return false;
-    const result = await taskModel.updateTaskModel(taskObj);
+    const result = await taskModel.updateTaskModel({ ...taskObj, date: new Date() });
     return result;
   },
   removeTaskService: async (id) => {

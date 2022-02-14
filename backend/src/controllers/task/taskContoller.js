@@ -28,6 +28,7 @@ const createTaskController = async (req, res, next) => {
 
 const updateTaskController = async (req, res, next) => {
   try {
+    console.log(req.body);
     const resultUpdateTaskController = await taskService.updateTaskService(req.body);
     if (!resultUpdateTaskController) return next(BAD_REQUEST_ID);
     return res.status(statusCode.ACCEPTED).json(resultUpdateTaskController);
