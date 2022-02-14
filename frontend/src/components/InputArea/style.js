@@ -58,6 +58,18 @@ const Container = styled.div`
       }
     }
   }
+
+  .btn__cancel {
+    background: none;
+    width: 50px;
+    &:hover {
+      background: none;
+    }
+  }
+
+  .icon__cancel {
+    color: red;
+  }
 `;
 
 export default Container;

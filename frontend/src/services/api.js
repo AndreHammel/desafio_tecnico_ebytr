@@ -33,6 +33,14 @@ const http = {
       return error.response.status;
     }
   },
+  updateTaskById: async (taskObj) => {
+    try {
+      const response = await api.put('/task/update-task', { ...taskObj });
+      return response.data;
+    } catch (error) {
+      return error.response.status;
+    }
+  },
 };
 
 export default http;

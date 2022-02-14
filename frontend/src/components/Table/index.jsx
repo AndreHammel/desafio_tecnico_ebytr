@@ -9,7 +9,7 @@ function convertDate(date) {
   return new Date(date).toLocaleString('pt-BR', { timeZone: 'America/Sao_Paulo' })
 }
 
-export default function Table({ tasks, removeTaskById }) {
+export default function Table({ tasks, removeTaskById, updateTask }) {
 
   return (
     <TableContainer>
@@ -36,7 +36,7 @@ export default function Table({ tasks, removeTaskById }) {
                 </IconButton>
               </Tooltip>
               <Tooltip title='editar' >
-                <IconButton onClick={ ()=> removeTaskById(_id)}>
+                <IconButton onClick={ ()=> updateTask(_id, task, employee, status)}>
                   <FaPencilAlt className='icon__pencil'/>
                 </IconButton>
               </Tooltip>

@@ -21,7 +21,7 @@ const TableContainer = styled.table`
   }
 
   th:nth-of-type(4) {
-    width: 100px;
+    width: 130px;
     border-bottom: 2px solid black;
   }
   th:nth-of-type(5) {
@@ -40,6 +40,7 @@ const TableContainer = styled.table`
   .icon__trash {
     color: var(--red);
   }
+
   .icon__pencil {
     color: var(--green);
   }
@@ -49,21 +50,18 @@ const TableContainer = styled.table`
     border-radius: 10px;
     border: 4px solid var(--blue-900);
     background: none;
-    width: 80px;
   }
   .andamento {
     color: var(--pink-300);
     border-radius: 10px;
     border: 4px solid var(--pink-300);
     background: none;
-    width: 80px;
   }
   .pronto {
     color: var(--green-banner);
     border-radius: 10px;
     border: 4px solid var(--green-banner);
     background: none;
-    width: 80px;
   }
 `;
 

@@ -1,42 +1,69 @@
 /* eslint-disable */ 
 import React, { useEffect, useState } from 'react';
+import { FaBomb } from 'react-icons/fa';
+import Tooltip from '@mui/material/Tooltip'
+import IconButton from '@mui/material/IconButton'
 
 import Container from './style';
 import http from '../../services/api';
 import Table from '../Table';
+
+
 
 export default function InputArea() {
   const [newtask, setNewTask] = useState('');
   const [employee, setEmployee] = useState('');
   const [status, setStatus] = useState('pendente');
   const [isInputValid, setIsInputValid] = useState(false);
-  const [tasks, setTasks] = useState([])
-  const [loading, setLoading] = useState(true)
+  const [tasks, setTasks] = useState([]);
+  const [temporaryId, setTemporaryId] = useState('');
+  const [loading, setLoading] = useState(true);
+
+  const cleanInputs = () => {
+    getAll();
+    setNewTask('');
+    setEmployee('');
+    setTemporaryId('');
+  }
 
   useEffect(() => {
     setIsInputValid(Boolean(newtask) && Boolean(employee));
   }, [newtask, employee]);
 
   useEffect(() => {
-    getAll()
+    getAll();
   },[])
 
   const getAll = async () => {
     const resultGetAllTasks = await http.getAllTasks();
-    setTasks(resultGetAllTasks)
-    setLoading(false)
+    setTasks(resultGetAllTasks);
+    setLoading(false);
   }
 
-  const handleButtonInsert = async (newtask, employee, status) => {
-    const createTask = await http.createNewTask({newtask, employee, status})
+  const handleButtonInsert = async (newtask, employee, status, e) => {
+    if (e.target.innerText === 'Inserir') {
+      await http.createNewTask({newtask, employee, status});
+      cleanInputs();
+    } else {
+      const result = await http.updateTaskById({task: newtask, employee, status, _id: temporaryId})
+      cleanInputs();
+    }
     getAll();
   };
 
   const removeTaskById = async (id) => {
-
-    await http.removeTaskById({ id })
-    getAll()
+    await http.removeTaskById({ id });
+    getAll();
   }
+
+  const updateTask = (_id, task, employee, status) => {
+    setNewTask(task);
+    setEmployee(employee);
+    setTemporaryId(_id)
+    setStatus(status)
+  }
+
+  const cancelEdition = () =>  cleanInputs()
 
   return (
     <Container>
@@ -51,13 +78,21 @@ export default function InputArea() {
         <select value={status} onChange={(e) => setStatus(e.target.value)}>
           <option value='pendente'>pendente</option>
           <option value='pronto'>pronto</option>
-          <option value='andamento'>em andamento</option>
+          <option value='em andamento'>em andamento</option>
         </select>
-        <button type='button' onClick={() => handleButtonInsert(newtask, employee, status)}  disabled={ !isInputValid } >
-          Inserir
+        <button 
+          type='button'
+          onClick={(e) => handleButtonInsert(newtask, employee, status, e)}
+          disabled={!isInputValid}>
+            { temporaryId ? 'Editar' : 'Inserir'}
         </button>
+        { temporaryId && <Tooltip title='cancelar edição' >
+          <IconButton onClick={ ()=> cancelEdition()} className='btn__cancel'>
+            <FaBomb className='icon__cancel'/>
+          </IconButton>
+        </Tooltip> }
       </fieldset>
-      { !loading && <Table tasks={tasks} removeTaskById={removeTaskById} />}
+      { !loading && <Table tasks={tasks} removeTaskById={removeTaskById} updateTask={updateTask}/>}
     </Container>
   );
 }
