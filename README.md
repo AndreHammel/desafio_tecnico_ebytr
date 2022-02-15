@@ -2,7 +2,7 @@
 
 ## Motivação & Objetivos
 
-  Simulação de caso onde um empresa fictícia (Ebytr) necessita de um controle de tarefas, a aplicação deve ser fullstak, onde no back-end é feito com NodeJS e o banco de dados com MongoDB, na parte de front-end é feita com React utilizando o styled-components para estilização.
+  Simulação de caso onde uma empresa fictícia (Ebytr) necessita de um controle de tarefas, a aplicação deve ser **fullstak**, onde no back-end é feito com **NodeJS** utilizando o banco de dados **MongoDB**, na parte de front-end é feita com **React** utilizando o styled-components para estilização.
 
 ### Funcionalidades da aplicação
 
@@ -19,10 +19,21 @@
 ## Como instalar
 
 ### Download
+```sh
+$ git clone git@github.com:AndreHammel/desafio_tecnico_ebytr.git
+```
+
+```sh
+$ cd desafio_tecnico_ebytr
+```
 
 ### Comandos
+```sh
+$ npm run dev:prestart
+```
 
 ## Lista de dependencias
+
 
 ### Back-end
 
