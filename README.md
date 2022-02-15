@@ -38,6 +38,26 @@ $ git clone git@github.com:AndreHammel/desafio_tecnico_ebytr.git
 $ cd desafio_tecnico_ebytr
 ```
 
+## Utilizando os teste
+
+### Back-end
+
+```sh
+$ cd backend
+```
+
+```sh
+$ npm run tests
+```
+
+#### Taxa de cobertura
+
+```sh
+$ npm run coverage
+```
+![taxa cobertura](https://user-images.githubusercontent.com/54488551/154141214-0206fac0-f729-4765-87d2-86d2dce01c1e.png)
+
+
 ### Iniciar o projeto
 
 ```sh
@@ -97,8 +117,8 @@ backend endpoints
 ```
 #### Exemplos de acesso
 
-* requisição de todas as tarefas
-:warning: Essa requisição GET precisar passar headers com chaves column: 'data' e value: 1
+* requisição de todas as tarefas\
+:warning: Essa requisição GET precisar passar headers com as chaves column: 'data' e value: 1
 ![requisição de todas as tarefas](https://user-images.githubusercontent.com/54488551/154137855-a96789cc-4ff0-440c-80e2-ea8963736425.png)
 * requisição para criar uma nova tarefa
 ![criar uma nova tarefa](https://user-images.githubusercontent.com/54488551/154138040-a85cdaf5-c6fb-4ccd-87cb-8bfcbf5bbdc8.png)
@@ -108,3 +128,8 @@ backend endpoints
 ![remover uma tarefa](https://user-images.githubusercontent.com/54488551/154138086-2142a0c2-88b6-4512-9412-3c5bc85664af.png)
 
 ### Futuras atualizações & refatorações
+
+* O método de fazer ordenação das colunas necessíta que toda vez seja feita um requisição para API, porem essa forma pode ser custosa e não muito eficiênte, para melhorar isso é melhor que a ordenação seja toda feita no front-end
+* Quando feita a ordenação e logo após isso é feita uma adição de uma nova tarefa o resultado é que a tarefa é adicionada  porem a ordenação é perdida, é necessário que a ordenação se mantenha.
+* Alguns pontos da parte de teste estão com código repetipo, é preciso refator essa parte.
+* Na estilização também acontece muito código repetido, é preciso refatorar e extrair mais da capacidade do styled-components.
