@@ -8,7 +8,11 @@ const {
 
 const getAllTasksController = async (req, res, _next) => {
   try {
-    const resultGetAllTasksController = await taskService.getAllTasksService();
+    const { column, value } = req.headers;
+    const resultGetAllTasksController = await taskService.getAllTasksService({
+      column,
+      value,
+    });
     return res.status(statusCode.OK).json(resultGetAllTasksController);
   } catch (error) {
     console.log(error);
@@ -28,7 +32,6 @@ const createTaskController = async (req, res, next) => {
 
 const updateTaskController = async (req, res, next) => {
   try {
-    console.log(req.body);
     const resultUpdateTaskController = await taskService.updateTaskService(req.body);
     if (!resultUpdateTaskController) return next(BAD_REQUEST_ID);
     return res.status(statusCode.ACCEPTED).json(resultUpdateTaskController);

@@ -4,7 +4,8 @@ const isValidTaskLength = require('../validations/isValidTaskLength');
 const isIdValid = require('../validations/isIdValid');
 
 module.exports = {
-  getAllTasksService: async () => taskModel.getAllTasksModel(),
+  getAllTasksService: async (objInfoTypeSort) =>
+    taskModel.getAllTasksModel(objInfoTypeSort),
   createTaskService: async (taskObj) => {
     const { task } = taskObj;
     if (!isValidTaskLength(task)) return false;

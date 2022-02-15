@@ -63,6 +63,10 @@ const TableContainer = styled.table`
     border: 4px solid var(--green-banner);
     background: none;
   }
+  svg {
+    font-size: 17px;
+    margin-left: 3px;
+  }
 `;
 
 export default TableContainer;

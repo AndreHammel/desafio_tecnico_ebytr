@@ -5,8 +5,18 @@ const connectionCollection = async () =>
   connection().then((db) => db.collection(process.env.COLLECTION));
 
 module.exports = {
-  getAllTasksModel: async () => {
-    const result = await (await connectionCollection()).find().toArray();
+  getAllTasksModel: async (objInfoTypeSort) => {
+    console.log(objInfoTypeSort, 'model');
+    console.log(typeof objInfoTypeSort.value);
+    const value = parseInt(objInfoTypeSort.value, 10);
+    const { column } = objInfoTypeSort;
+    console.log(typeof value);
+    const result = await (
+      await connectionCollection()
+    )
+      .find()
+      .sort({ [column]: [value] })
+      .toArray();
     return result;
   },
   createTaskModel: async (taskObj) => {

@@ -10,3 +10,7 @@ db.tasks.insertMany([
   { 'employee': 'Godinez', 'task': 'Dizer que não fui "eu"', 'status': 'pronto', 'date': new Date('2015-09-10T08:43:00Z') },
   { 'employee': 'Jaiminho', 'task': 'Descansar um pouco para evitar a fadiga', 'status': 'em andamento', 'date': new Date('2016-02-06T20:20:13Z') },
 ]);
+
+
+use('model_tasks');
+db.tasks.find().sort({ date: '1'})
