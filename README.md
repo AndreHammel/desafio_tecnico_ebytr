@@ -11,6 +11,8 @@ Tabela de conteúdos
   * [Como instalar](#como-instalar)
     * [Download](#download)
     * [Iniciar o projeto](#iniciar-o-projeto)
+    * [Iniciar o servidor](#iniciar-o-servidor)
+    * [Iniciar o cliente](#iniciar-o-cliente)
   * [Utilizando os teste](#utilizando-os-teste)
     * [Back-end](#back-end)
       * [Taxa de cobertura](#taxa-de-cobertura)
@@ -72,6 +74,20 @@ $ cd desafio_tecnico_ebytr
 
 ```sh
 $ npm run dev:prestart
+```
+
+### Iniciar o servidor
+- fazer após 'Iniciar o projeto'
+
+```sh
+$ npm run dev:start
+```
+
+### Iniciar o cliente
+- fazer após 'Iniciar o servidor'
+
+```sh
+$ npm start
 ```
 
 ## Utilizando os teste
