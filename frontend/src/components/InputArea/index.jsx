@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { FaBomb } from 'react-icons/fa';
 import Tooltip from '@mui/material/Tooltip';
 import IconButton from '@mui/material/IconButton';
+import Box from '@mui/material/Box';
+import CircularProgress from '@mui/material/CircularProgress';
 
 import Container from './style';
 import http from '../../services/api';
@@ -104,6 +106,11 @@ export default function InputArea() {
           </Tooltip>
         )}
       </fieldset>
+      {loading && (
+        <Box sx={{ display: 'flex' }}>
+          <CircularProgress />
+        </Box>
+      )}
       {!loading && (
         <Table
           tasks={tasks}
