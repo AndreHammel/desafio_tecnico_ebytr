@@ -28,16 +28,36 @@ $ git clone git@github.com:AndreHammel/desafio_tecnico_ebytr.git
 $ cd desafio_tecnico_ebytr
 ```
 
-### Comandos
+### Iniciar o projeto
+
 ```sh
 $ npm run dev:prestart
 ```
 
 ## Lista de dependencias
 
-
 ### Back-end
-
+    * body-parser: 1.19.1
+    * cors: 2.8.5
+    * dotenv: 16.0.0
+    * eslint-config-trybe-backend: 1.0.4
+    * express: 4.17.2
+    * http-status-codes: 2.2.0
+    * moment: 2.29.1
+    * mongodb: 4.3.1
 ### Front-end
+    * @mui/material: 5.4.1
+    * axios: 0.25.0
+    * prop-types: 15.8.1
+    * react: 17.0.2
+    * react-dom: 17.0.2
+    * react-icons: 4.3.1
+    * react-router-dom: 6.2.1
+    * react-scripts: 5.0.0
+    * styled-components: 5.3.3
 
 ## Links
+
+[Figma](https://www.figma.com/file/Vli77MPIoMZMwpqSTtQDrX/Desafio-T%C3%A9cnico---Ebytr?node-id=0%3A1)
+[Deploy back-end]()
+[Deploy front-end]()
