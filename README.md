@@ -96,6 +96,15 @@ backend endpoints
 └─── remove uma tarefa: /task/remove-task
 ```
 #### Exemplos de acesso
-* requisição de todas as tarefas
-![requisição de todas as tarefas](![image](https://user-images.githubusercontent.com/54488551/154136096-2b533b4c-1eec-4ec0-83b7-d8da7b75d7a5.png))
 
+* requisição de todas as tarefas
+:warning: Essa requisição GET precisar passar headers com chaves column: 'data' e value: 1
+![requisição de todas as tarefas](https://user-images.githubusercontent.com/54488551/154137855-a96789cc-4ff0-440c-80e2-ea8963736425.png)
+* requisição para criar uma nova tarefa
+![criar uma nova tarefa](https://user-images.githubusercontent.com/54488551/154138040-a85cdaf5-c6fb-4ccd-87cb-8bfcbf5bbdc8.png)
+* requisição para atualizar uma tarefa
+![atualizar uma tarefa](https://user-images.githubusercontent.com/54488551/154138074-7d552ef1-c297-448f-a84a-509c87f30167.png)
+* requisição para remover uma tarefa
+![remover uma tarefa](https://user-images.githubusercontent.com/54488551/154138086-2142a0c2-88b6-4512-9412-3c5bc85664af.png)
+
+### Futuras atualizações & refatorações
