@@ -76,6 +76,17 @@ const Container = styled.div`
     font-weight: lighter;
     font-style: italic;
   }
+
+  .box {
+    display: flex;
+    align-item: center;
+    justify-content: center;
+    color: red;
+  }
+
+  .circular {
+    color: var(--pink-300);
+  }
 `;
 
 export default Container;

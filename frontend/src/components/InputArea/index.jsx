@@ -13,7 +13,7 @@ export default function InputArea() {
   const [newtask, setNewTask] = useState('');
   const [employee, setEmployee] = useState('');
   const [status, setStatus] = useState('pendente');
-  const [isInputValid, setIsInputValid] = useState(false);
+  const [isInputValid, setIsInputValid] = useState(true);
   const [tasks, setTasks] = useState([]);
   const [temporaryId, setTemporaryId] = useState('');
   const [loading, setLoading] = useState(true);
@@ -107,8 +107,8 @@ export default function InputArea() {
         )}
       </fieldset>
       {loading && (
-        <Box sx={{ display: 'flex' }}>
-          <CircularProgress />
+        <Box sx={{ display: 'flex' }} className='box'>
+          <CircularProgress className='circular' />
         </Box>
       )}
       {!loading && (
