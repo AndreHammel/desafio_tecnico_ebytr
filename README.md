@@ -72,7 +72,12 @@ $ npm run dev:prestart
 ## Links e Detalhes
 
 ### Figma
+
 #### [Figma](https://www.figma.com/file/Vli77MPIoMZMwpqSTtQDrX/Desafio-T%C3%A9cnico---Ebytr?node-id=0%3A1)
+
+### Frontend
+
+#### [Deploy front-end](https://frontend-ebytr-1000.herokuapp.com/task-management)
 
 ### Backend
 
@@ -91,5 +96,6 @@ backend endpoints
 └─── remove uma tarefa: /task/remove-task
 ```
 #### Exemplos de acesso
+* requisição de todas as tarefas
+![requisição de todas as tarefas](![image](https://user-images.githubusercontent.com/54488551/154136096-2b533b4c-1eec-4ec0-83b7-d8da7b75d7a5.png))
 
-#### [Deploy front-end]()
