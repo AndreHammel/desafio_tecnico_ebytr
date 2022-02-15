@@ -3,6 +3,7 @@
 Tabela de conteúdos
 =================
 <!--ts-->
+  * [Tecnologias Utilizada](#tecnologias-utilizadas)
   * [Motivação & Objetivos](#Motivação--Objetivos)
     * [Funcionalidades da aplicação](#funcionalidades-da-aplicação)
     * [Características](#características)
@@ -24,6 +25,12 @@ Tabela de conteúdos
       * [Exemplos de acesso](#exemplos-de-acesso)
   * [Futuras atualizações & refatorações](#futuras-atualizações--refatorações)
 <!--te-->
+## Tecnologias Utilizada
+  - JavaScript![652581_code_command_develop_javascript_language_icon](https://user-images.githubusercontent.com/54488551/154150106-83a4f955-ecdc-4e8d-bb42-370412a1cfe0.png)
+  - React![1174949_js_react js_logo_react_react native_icon](https://user-images.githubusercontent.com/54488551/154149932-cd5e451e-4384-40bc-8907-6ee50cb989c5.png)
+  - Styled-components
+  - NodeJS![4375017_js_logo_node_icon](https://user-images.githubusercontent.com/54488551/154150313-7e77d116-dfe0-4070-9bab-3790f03d0b62.png)
+  - MongoDB![1012822_code_development_logo_mongodb_programming_icon](https://user-images.githubusercontent.com/54488551/154150227-4dc78f24-5d20-4f08-bf9a-97f5c45e4c78.png)
 
 ## Motivação & Objetivos
 
