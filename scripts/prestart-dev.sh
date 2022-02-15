@@ -5,7 +5,7 @@ export NODE_ENV=development
 function initialize_back_end () {
   printf "\n> ASYNC: Instalando o back-end\n"
   (
-    cd ./back-end
+    cd ./backend
     cacheFolderBack="/tmp/tasks"
     rm -rf $cacheFolderBack
     npm_config_loglevel=silent npm install --cache $cacheFolderBack
@@ -15,7 +15,7 @@ function initialize_back_end () {
 function initialize_front_end() {
   printf "\n> ASYNC: Instalando o front-end\n"
   (
-    cd ./front-end
+    cd ./frontend
     cacheFolderFront="/tmp/tasks"
     rm -rf $cacheFolderFront
     npm_config_loglevel=silent npm install --cache $cacheFolderFront
