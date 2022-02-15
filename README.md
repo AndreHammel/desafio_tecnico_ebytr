@@ -1,5 +1,30 @@
 # Desafio Técnico Ebytr
 
+Tabela de conteúdos
+=================
+<!--ts-->
+  * [Motivação & Objetivos](#Motivação--Objetivos)
+    * [Funcionalidades da aplicação](#funcionalidades-da-aplicação)
+    * [Características](#características)
+  * [Interface](#Interface)
+  * [Como instalar](#como-instalar)
+    * [Download](#download)
+    * [Iniciar o projeto](#iniciar-o-projeto)
+  * [Utilizando os teste](#utilizando-os-teste)
+    * [Back-end](#back-end)
+      * [Taxa de cobertura](#taxa-de-cobertura)
+  * [Lista de dependencias](#lista-de-dependencias)
+    * [Back-end](#back-end)
+    * [Front-end](#front-end)
+  * [Links & Detalhes](#links--detalhes)
+    * [Figma](#figma)
+    * [Front-end](#deploy-front-end)
+    * [Back-end](#deploy-front-end)
+      * [Backend endpoints](#backend-endpoints)
+      * [Exemplos de acesso](#exemplos-de-acesso)
+  * [Futuras atualizações & refatorações](#futuras-atualizações--refatorações)
+<!--te-->
+
 ## Motivação & Objetivos
 
   Simulação de caso onde uma empresa fictícia (Ebytr) necessita de um controle de tarefas, a aplicação deve ser **fullstak**, onde no back-end é feito com **NodeJS** utilizando o banco de dados **MongoDB**, na parte de front-end é feita com **React** utilizando o styled-components para estilização.
@@ -14,7 +39,7 @@
       * Remover uma tarefa da lista
   - As condições atuais possíveis de uma tarefa deve ser: pendente, em andamento e pronto
 
-#### Características da funcionalidade
+### Características
 
   - Número máximo de caracteres:
     * no campo de tarefa é 85 caracteres
@@ -37,6 +62,11 @@ $ git clone git@github.com:AndreHammel/desafio_tecnico_ebytr.git
 ```sh
 $ cd desafio_tecnico_ebytr
 ```
+### Iniciar o projeto
+
+```sh
+$ npm run dev:prestart
+```
 
 ## Utilizando os teste
 
@@ -58,11 +88,7 @@ $ npm run coverage
 ![taxa cobertura](https://user-images.githubusercontent.com/54488551/154141214-0206fac0-f729-4765-87d2-86d2dce01c1e.png)
 
 
-### Iniciar o projeto
 
-```sh
-$ npm run dev:prestart
-```
 
 ## Lista de dependencias
 
@@ -89,19 +115,14 @@ $ npm run dev:prestart
 * react-scripts: 5.0.0
 * styled-components: 5.3.3
 
-## Links e Detalhes
+## Links & Detalhes
 
-### Figma
 
-#### [Figma](https://www.figma.com/file/Vli77MPIoMZMwpqSTtQDrX/Desafio-T%C3%A9cnico---Ebytr?node-id=0%3A1)
+### [Figma](https://www.figma.com/file/Vli77MPIoMZMwpqSTtQDrX/Desafio-T%C3%A9cnico---Ebytr?node-id=0%3A1)
 
-### Frontend
+### [Deploy front-end](https://frontend-ebytr-1000.herokuapp.com/task-management)
 
-#### [Deploy front-end](https://frontend-ebytr-1000.herokuapp.com/task-management)
-
-### Backend
-
-#### [Deploy back-end](https://backend-ebytr-1000.herokuapp.com/task)
+### [Deploy back-end](https://backend-ebytr-1000.herokuapp.com/task)
 
 #### Backend endpoints
 ```
@@ -127,7 +148,7 @@ backend endpoints
 * requisição para remover uma tarefa
 ![remover uma tarefa](https://user-images.githubusercontent.com/54488551/154138086-2142a0c2-88b6-4512-9412-3c5bc85664af.png)
 
-### Futuras atualizações & refatorações
+## Futuras atualizações & refatorações
 
 * O método de fazer ordenação das colunas necessíta que toda vez seja feita um requisição para API, porem essa forma pode ser custosa e não muito eficiênte, para melhorar isso é melhor que a ordenação seja toda feita no front-end
 * Quando feita a ordenação e logo após isso é feita uma adição de uma nova tarefa o resultado é que a tarefa é adicionada  porem a ordenação é perdida, é necessário que a ordenação se mantenha.
