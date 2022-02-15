@@ -25,7 +25,7 @@ Tabela de conteúdos
       * [Exemplos de acesso](#exemplos-de-acesso)
   * [Futuras atualizações & refatorações](#futuras-atualizações--refatorações)
 <!--te-->
-## Tecnologias Utilizada
+## Tecnologias Utilizadas
   ![javascript_language](https://user-images.githubusercontent.com/54488551/154150106-83a4f955-ecdc-4e8d-bb42-370412a1cfe0.png)![react](https://user-images.githubusercontent.com/54488551/154149932-cd5e451e-4384-40bc-8907-6ee50cb989c5.png)![node](https://user-images.githubusercontent.com/54488551/154150313-7e77d116-dfe0-4070-9bab-3790f03d0b62.png)
 ![mongodb](https://user-images.githubusercontent.com/54488551/154150227-4dc78f24-5d20-4f08-bf9a-97f5c45e4c78.png)![styled_components](https://user-images.githubusercontent.com/54488551/154152151-53f25e42-8893-4e61-b77e-c81bcdf36394.png)![material_ui](https://user-images.githubusercontent.com/54488551/154157869-0ab970ba-86de-470d-8fc4-b7ce7b783476.png)
 
