@@ -6,11 +6,8 @@ const connectionCollection = async () =>
 
 module.exports = {
   getAllTasksModel: async (objInfoTypeSort) => {
-    console.log(objInfoTypeSort, 'model');
-    console.log(typeof objInfoTypeSort.value);
     const value = parseInt(objInfoTypeSort.value, 10);
     const { column } = objInfoTypeSort;
-    console.log(typeof value);
     const result = await (
       await connectionCollection()
     )

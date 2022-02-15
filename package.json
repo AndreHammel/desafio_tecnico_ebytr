@@ -1,0 +1,20 @@
+{
+  "name": "desafio_tecnico_ebytr",
+  "version": "1.0.0",
+  "description": "## Motivação & Objetivos",
+  "main": "index.js",
+  "scripts": {
+    "dev:prestart": "./scripts/prestart-dev.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreHammel/desafio_tecnico_ebytr.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndreHammel/desafio_tecnico_ebytr/issues"
+  },
+  "homepage": "https://github.com/AndreHammel/desafio_tecnico_ebytr#readme"
+}
