@@ -15,6 +15,7 @@
   - As condições atuais possíveis de uma tarefa deve ser: pendente, em andamento e pronto
 
 ## Interface
+![ebytr](https://user-images.githubusercontent.com/54488551/154064637-8977b188-c114-46da-b5cf-a0caa04482b3.gif)
 
 ## Como instalar
 
