@@ -20,6 +20,7 @@
 ## Como instalar
 
 ### Download
+
 ```sh
 $ git clone git@github.com:AndreHammel/desafio_tecnico_ebytr.git
 ```
@@ -37,6 +38,7 @@ $ npm run dev:prestart
 ## Lista de dependencias
 
 ### Back-end
+
 * body-parser: 1.19.1
 * cors: 2.8.5
 * dotenv: 16.0.0
@@ -45,7 +47,9 @@ $ npm run dev:prestart
 * http-status-codes: 2.2.0
 * moment: 2.29.1
 * mongodb: 4.3.1
+
 ### Front-end
+
 * @mui/material: 5.4.1
 * axios: 0.25.0
 * prop-types: 15.8.1
@@ -58,6 +62,6 @@ $ npm run dev:prestart
 
 ## Links
 
-[Figma](https://www.figma.com/file/Vli77MPIoMZMwpqSTtQDrX/Desafio-T%C3%A9cnico---Ebytr?node-id=0%3A1)
-[Deploy back-end]()
-[Deploy front-end]()
+#### [Figma](https://www.figma.com/file/Vli77MPIoMZMwpqSTtQDrX/Desafio-T%C3%A9cnico---Ebytr?node-id=0%3A1)
+#### [Deploy back-end]()
+#### [Deploy front-end]()
