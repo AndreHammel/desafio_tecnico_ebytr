@@ -14,6 +14,15 @@
       * Remover uma tarefa da lista
   - As condições atuais possíveis de uma tarefa deve ser: pendente, em andamento e pronto
 
+#### Características da funcionalidade
+
+  - Número máximo de caracteres:
+    * no campo de tarefa é 85 caracteres
+    * no campo de empregado é 25 caracteres
+  - O botão só se torna habilitado quando ambos os campos (tarefa e empregado) estão preenchidos
+  - Ao editar um tarefa o botão de inserir muda para editar
+  - Na fase de edição de uma tarefa aparece o botão (em formato de bomba) na qual pode-se cancelar a edição
+
 ## Interface
 ![ebytr](https://user-images.githubusercontent.com/54488551/154064637-8977b188-c114-46da-b5cf-a0caa04482b3.gif)
 
@@ -60,8 +69,27 @@ $ npm run dev:prestart
 * react-scripts: 5.0.0
 * styled-components: 5.3.3
 
-## Links
+## Links e Detalhes
 
+### Figma
 #### [Figma](https://www.figma.com/file/Vli77MPIoMZMwpqSTtQDrX/Desafio-T%C3%A9cnico---Ebytr?node-id=0%3A1)
-#### [Deploy back-end]()
+
+### Backend
+
+#### [Deploy back-end](https://backend-ebytr-1000.herokuapp.com/task)
+
+#### Backend endpoints
+```
+backend endpoints
+│
+└─── retorna todas as tarefas:  /task
+│
+└─── cria uma nova tarefa: /task/new-task
+│
+└─── atualiza uma tarefa: /task/update-task
+│
+└─── remove uma tarefa: /task/remove-task
+```
+#### Exemplos de acesso
+
 #### [Deploy front-end]()
