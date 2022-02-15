@@ -29,7 +29,8 @@
   },
   "scripts": {
     "tests": "mocha ./src/tests/**/*$NAME*.test.js --exit",
-    "start": "nodemon index.js",
+    "dev:start": "nodemon index.js",
+    "start": "node index.js",
     "coverage": "nyc npm run tests"
   },
   "keywords": [],

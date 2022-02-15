@@ -1,6 +1,6 @@
 const { MongoClient } = require('mongodb');
 
-const MONGO_DB_URL = `mongodb://${process.env.HOSTNAME}`;
+const MONGO_DB_URL = process.env.HOSTNAME;
 
 let schema = null;
 
