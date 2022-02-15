@@ -70,6 +70,12 @@ const Container = styled.div`
   .icon__cancel {
     color: red;
   }
+
+  input::placeholder {
+    font-size: 14px;
+    font-weight: lighter;
+    font-style: italic;
+  }
 `;
 
 export default Container;

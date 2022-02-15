@@ -76,11 +76,13 @@ export default function InputArea() {
           value={newtask}
           onChange={(e) => setNewTask(e.target.value)}
           maxLength='85'
+          placeholder='Digite aqui a tarefa a ser inserida'
         />
         <input
           value={employee}
           onChange={(e) => setEmployee(e.target.value)}
           maxLength='25'
+          placeholder='Digite o nome do empregado'
         />
         <select value={status} onChange={(e) => setStatus(e.target.value)}>
           <option value='pendente'>pendente</option>
