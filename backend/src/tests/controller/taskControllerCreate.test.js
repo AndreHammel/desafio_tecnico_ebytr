@@ -1,3 +1,9 @@
+/**
+ * *** ATENÇÂO ***
+ * Teste não implementado
+ * em fase de construção
+ */
+
 // const sinon = require('sinon');
 // const { expect } = require('chai');
 // const statusCode = require('http-status-codes').StatusCodes;
