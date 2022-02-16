@@ -14,9 +14,3 @@ module.exports = {
   BAD_REQUEST_EMPLOYEE_TASK,
   BAD_REQUEST_ID,
 };
-
-// {
-// 	"employee": "Bruxa 71",
-// 	"task": "Bruxaria",
-// 	"status": "Pendente"
-// }
