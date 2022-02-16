@@ -178,7 +178,7 @@ backend endpoints
 #### Exemplos de acesso
 
 * requisição de todas as tarefas\
-:warning: Essa requisição GET precisar passar headers com as chaves column: 'data' e value: 1
+:warning: Essa requisição GET precisar passar o headers com as chaves column: 'date' e value: 1
 ![requisição de todas as tarefas](https://user-images.githubusercontent.com/54488551/154137855-a96789cc-4ff0-440c-80e2-ea8963736425.png)
 * requisição para criar uma nova tarefa
 ![criar uma nova tarefa](https://user-images.githubusercontent.com/54488551/154138040-a85cdaf5-c6fb-4ccd-87cb-8bfcbf5bbdc8.png)
