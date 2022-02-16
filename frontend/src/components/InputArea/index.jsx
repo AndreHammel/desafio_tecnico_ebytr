@@ -1,13 +1,22 @@
-import React, { useEffect, useState } from 'react';
+import Box from '@mui/material/Box';
 import { FaBomb } from 'react-icons/fa';
 import Tooltip from '@mui/material/Tooltip';
 import IconButton from '@mui/material/IconButton';
-import Box from '@mui/material/Box';
+import React, { useEffect, useState } from 'react';
 import CircularProgress from '@mui/material/CircularProgress';
 
+import Table from '../Table';
 import Container from './style';
 import http from '../../services/api';
-import Table from '../Table';
+
+/**
+ * Sobre Componente InputArea:
+ * Tem a função de além de controlar os valores nos inputs de task/employee/status
+ * também enviar esses valores para o componente filho Table para o resultado seja renderizado na tela,
+ * também envia 3 funções para Table (removeTaskById, updateTask, getAll )
+ * A função getAll é chamada toda vez que alguma modificação é realizada nos valores e assim
+ * é efetuada uma nova renderização na tela.
+ */
 
 export default function InputArea() {
   const [newtask, setNewTask] = useState('');
