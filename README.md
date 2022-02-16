@@ -15,7 +15,9 @@ Tabela de conteúdos
     * [Iniciar o cliente](#iniciar-o-cliente)
   * [Utilizando os teste](#utilizando-os-teste)
     * [Back-end](#back-end)
-      * [Taxa de cobertura](#taxa-de-cobertura)
+      * [Taxa de cobertura back-end](#taxa-de-cobertura-back-end)
+    * [Front-end](#front-end)
+      * [Taxa de cobertura front-end](#taxa-de-cobertura-front-end)
   * [Lista de dependencias](#lista-de-dependencias)
     * [Back-end](#back-end)
     * [Front-end](#front-end)
@@ -29,8 +31,7 @@ Tabela de conteúdos
 <!--te-->
 ## Tecnologias Utilizadas
   ![javascript_language](https://user-images.githubusercontent.com/54488551/154150106-83a4f955-ecdc-4e8d-bb42-370412a1cfe0.png)![react](https://user-images.githubusercontent.com/54488551/154149932-cd5e451e-4384-40bc-8907-6ee50cb989c5.png)![node](https://user-images.githubusercontent.com/54488551/154150313-7e77d116-dfe0-4070-9bab-3790f03d0b62.png)
-![mongodb](https://user-images.githubusercontent.com/54488551/154150227-4dc78f24-5d20-4f08-bf9a-97f5c45e4c78.png)![styled_components](https://user-images.githubusercontent.com/54488551/154152151-53f25e42-8893-4e61-b77e-c81bcdf36394.png)![material_ui](https://user-images.githubusercontent.com/54488551/154157869-0ab970ba-86de-470d-8fc4-b7ce7b783476.png)
-
+![mongodb](https://user-images.githubusercontent.com/54488551/154150227-4dc78f24-5d20-4f08-bf9a-97f5c45e4c78.png)![styled_components](https://user-images.githubusercontent.com/54488551/154152151-53f25e42-8893-4e61-b77e-c81bcdf36394.png)![material_ui](https://user-images.githubusercontent.com/54488551/154157869-0ab970ba-86de-470d-8fc4-b7ce7b783476.png)![mocha](https://user-images.githubusercontent.com/54488551/154359255-218498d8-668a-4ebc-a3a3-d8571c501dc4.svg)![mocha_Vul_icon](https://user-images.githubusercontent.com/54488551/154360297-6f7c3756-363e-4e65-9a03-7d7c57ce3044.png)![chai_CqT_icon](https://user-images.githubusercontent.com/54488551/154359766-deb5c3a8-c559-4ff3-a19c-8480208858a1.png)![sino_WSI_icon](https://user-images.githubusercontent.com/54488551/154360504-30452629-7e14-41d2-af54-d64f204b12de.png)![rtl_WvD_icon](https://user-images.githubusercontent.com/54488551/154360701-d26bf9f1-7232-41a6-8a48-bb3e287582f4.png)
 
 
 ## Motivação & Objetivos
@@ -102,15 +103,31 @@ $ cd backend
 $ npm run tests
 ```
 
-#### Taxa de cobertura
+#### Taxa de cobertura back-end
 
 ```sh
 $ npm run coverage
 ```
-![taxa cobertura](https://user-images.githubusercontent.com/54488551/154141214-0206fac0-f729-4765-87d2-86d2dce01c1e.png)
+![taxa cobertura backend](https://user-images.githubusercontent.com/54488551/154141214-0206fac0-f729-4765-87d2-86d2dce01c1e.png)
+
+### Front-end
+
+```sh
+$ cd frontend
+```
+
+```sh
+$ npm run test
+```
 
 
+#### Taxa de cobertura front-end
 
+```sh
+$ npm run test -- --coverage
+```
+
+![taxa cobertura frontend](https://user-images.githubusercontent.com/54488551/154357564-77b1d6d2-4eb4-4b8e-9f1f-fba39668c4f2.png)
 
 ## Lista de dependencias
 
